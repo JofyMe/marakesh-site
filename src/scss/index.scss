@@ -1,2 +1,66 @@
 @import 'reset.scss';
 
+body {
+  background-color: #0C0B08;
+  color: white;
+  font-family: "Cormorant Upright", serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+}
+
+header {
+  height: 80px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+
+  .header__logo {}
+
+  .header__menu {}
+
+  .menu {
+    .menu__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .menu__item {
+        margin-right: 32px;
+
+        .menu__link {
+          font-size: 16px;
+          color: white;
+          font-family: "Open Sans";
+          text-decoration: none;
+          transition: color 0.3s ease; // Плавное изменение цвета текста и фон
+
+          &:hover {
+            color: #DCCA87;
+
+          }
+        }
+      }
+    }
+  }
+
+  .header__button {}
+
+  .button {
+    text-align: right;
+
+    .button__primary {
+      width: 175px;
+      height: 44px;
+      background-color: #DCCA87;
+      color: #0C0B08;
+      font-family: "Cormorant Upright";
+      font-size: 16px;
+      font-weight: 900;
+    }
+  }
+}
