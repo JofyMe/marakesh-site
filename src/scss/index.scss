@@ -112,3 +112,57 @@ header {
   }
 }
 
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10%;
+  margin: 10% auto;
+  
+
+  .about__img {
+    img {
+      width: 100%;
+    }
+  }
+
+  .about__text {
+    .about__img {
+      width: 100%;
+    }
+
+    .about__subtitle {
+      font-size: 23px;
+      font-weight: 900;
+      color: white;
+      margin-top: 40px;
+    }
+
+    .about__title {
+      font-size: 64px;
+      font-weight: 900;
+      color: #DCCA87;
+      margin-top: 25px;
+    }
+
+    .about__desc {
+      max-width: 600px;
+      font-size: 16px;
+      color: #AAAAAA;
+      margin-top: 32px;
+      line-height: 1.5;
+    }
+
+    .about__button {
+      width: 175px;
+      height: 44px;
+      background-color: #DCCA87;
+      color: #0C0B08;
+      font-family: "Cormorant Upright";
+      font-size: 16px;
+      font-weight: 900;
+      margin-top: 32px;
+    }
+  }
+}
+
