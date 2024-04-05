@@ -118,7 +118,7 @@ header {
   grid-template-rows: 1fr;
   grid-column-gap: 10%;
   margin: 10% auto;
-  
+
 
   .about__img {
     img {
@@ -166,3 +166,64 @@ header {
   }
 }
 
+.kitchen {
+  margin: 10% auto;
+  font-weight: 900;
+  text-align: center;
+  .kitchen__text {
+    text-align: center;
+    .kitchen__subtitle {
+      color: #fff;
+      font-size: 23px;
+    }
+
+    .kitchen__title {
+      color: #DCCA87;
+      font-size: 64px;
+      margin-top: 25px;
+    }
+  }
+
+  .kitchen__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+    margin-top: 96px;
+
+    .kitchen__section {
+      .section__title {
+        color: #fff;
+        font-size: 45px;
+        margin-bottom: 10px;
+      }
+
+      .section__item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        margin-top: 40px;
+
+        .item__text {
+          .item__title {
+            color: #DCCA87;
+            font-size: 23px;
+          }
+
+          .item__desc {
+            color: #AAAAAA;
+            font-size: 16px;
+            margin-top: 8px;
+          }
+        }
+
+        .item__money {
+          .item__price {
+            color: #fff;
+            font-size: 23px;
+          }
+        }
+      }
+    }
+  }
+}
