@@ -220,11 +220,6 @@ header {
     margin-top: 40px;
   }
   
-
-  
-
-  
-  
 }
 
 .about {
@@ -428,6 +423,59 @@ header {
 //   }
 // }
 
+.news {
+  margin: 10% auto;
+
+  .news__content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+
+    .news__subtitle {
+      font-size: 23px;
+      font-weight: 900;
+      color: white;
+      margin-top: 40px;
+    }
+    .news__title {
+      font-size: 64px;
+      font-weight: 900;
+      color: #DCCA87;
+      margin-top: 25px;
+    }
+    .news__desc {
+      font-size: 16px;
+      color: #fff;
+      margin-top: 32px;
+      line-height: 1.5;
+    }
+  }
+  .news__email {
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: center;
+
+
+    .news__input {
+      height: 50px;
+      width: 60%;
+      background-color: #0C0B08;
+      border: 1px solid #F5EFDB;
+      padding: 0px 20px;
+      color: #AAAAAA;
+    }
+    .news__button {
+      width: 175px;
+      height: 44px;
+      background-color: #DCCA87;
+      color: #0C0B08;
+      font-family: "Cormorant Upright";
+      font-size: 16px;
+      font-weight: 900;
+      margin-left: 30px;
+    }
+  }
+}
 
 .footer {
   display: grid;

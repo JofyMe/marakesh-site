@@ -17,3 +17,7 @@ closePopupButton.addEventListener('click', () => {
     phonePopup.classList.remove('show');
   }, 300); 
 });
+
+function clearInput() {
+    document.getElementById("news__input").value = "";
+  }
