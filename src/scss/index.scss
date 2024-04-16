@@ -82,14 +82,16 @@ header {
       font-family: "Cormorant Upright";
       font-size: 16px;
       font-weight: 900;
-      
+
     }
+
     @media screen and (max-width: 992px) {
       position: fixed;
       padding: 30% 0%;
       width: 100%;
       height: 100%;
-      top: -1000%;;
+      top: -1000%;
+      ;
       left: 0;
       right: 0;
       opacity: 0;
@@ -115,7 +117,7 @@ header {
 
   .button {
     text-align: right;
-    
+
     @media screen and (max-width: 992px) {
       text-align: center;
     }
@@ -130,6 +132,7 @@ header {
       font-weight: 900;
     }
   }
+
   .header__burger {
     display: none;
 
@@ -154,6 +157,7 @@ header {
 
     }
   }
+
   .header__burger::after {
     rotate: -360deg;
   }
@@ -438,7 +442,7 @@ header {
 
   .kitchen__list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 40px;
     margin: 96px auto;
@@ -446,12 +450,18 @@ header {
     @media screen and (max-width: 992px) {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
     }
 
 
     .kitchen__section {
       margin-bottom: 80px;
+
+      @media screen and (max-width: 992px) {
+        width: 90%;
+        margin: 0 auto;
+      }
+
 
       .section__title {
         color: #fff;
@@ -568,8 +578,11 @@ header {
   }
 
   .gallery__item {
+    margin: auto;
+
     img {
       width: 100%;
+
 
       @media screen and (max-width: 768px) {
         width: 70%;
@@ -729,6 +742,9 @@ header {
       a {
         padding: 10px;
         color: #FFF;
+        i {
+          font-size: 25px;
+        }
       }
     }
   }
