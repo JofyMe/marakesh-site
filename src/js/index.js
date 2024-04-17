@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", function() {
       block3.style.opacity = 0;
       block3.style.top = "-1000%";
     } else {
-      block2.style.opacity = 1;
+      block2.style.opacity = 0.9;
       block2.style.top = 0;
       block3.style.opacity = 1;
-      block3.style.top = 0;
+      block3.style.top = "50%";
     }
     isOpaque = !isOpaque;
   });
@@ -44,10 +44,18 @@ function clearInput() {
     document.getElementById("news__input").value = "";
   }
 
-  //For Anchor link
+  var lastScrolledElement = null;
+
   function scrollToPart(partId) {
     var part = document.getElementById(partId);
-    part.scrollIntoView({ behavior: 'smooth' });
+    
+    // Если последний прокрученный элемент совпадает с текущим, прокручиваем к верху
+    if (lastScrolledElement === part) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      lastScrolledElement = null; // Сбрасываем последний прокрученный элемент
+    } else {
+      // В противном случае, прокручиваем к элементу
+      part.scrollIntoView({ behavior: 'smooth' });
+      lastScrolledElement = part; // Обновляем последний прокрученный элемент
+    }
   }
-
-  
