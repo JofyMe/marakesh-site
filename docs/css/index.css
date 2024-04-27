@@ -285,7 +285,7 @@ header .header__burger::after {
   width: 100%;
   display: grid;
   grid-template-rows: 1fr;
-  background-image: url("/assets/images/hero__new__2__light.jpg");
+  background-image: url("assets/images/hero__new__2__light.jpg");
   background-size: cover;
   background-position: center;
   margin: 0 auto;
