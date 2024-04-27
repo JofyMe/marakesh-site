@@ -31,6 +31,7 @@ header {
 
   .header__logo {
     z-index: 999;
+
     @media screen and (max-width: 768px) {
       img {
         width: 100%;
@@ -168,20 +169,25 @@ header {
 }
 
 .hero {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  margin: 10% auto;
+  background-image: url('/assets/images/hero__new__2__light.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  padding: 20% 0;
 
   @media screen and (max-width: 992px) {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
     text-align: center;
   }
 
   .hero__text {
     margin: auto 60px auto 0px;
+    margin: 0 auto;
+    text-align: center;
+    width: calc(100% - 30px);
 
     @media screen and (max-width: 992px) {
       margin: 10% auto;
@@ -205,6 +211,9 @@ header {
       font-size: 16px;
       color: #AAAAAA;
       line-height: 1.5;
+      margin-top: 10px;
+      margin: 0 auto;
+      margin: 25px auto;
 
       @media screen and (max-width: 992px) {
         margin: 32px auto;
@@ -245,7 +254,7 @@ header {
   border: 1px solid #363225;
   text-align: center;
   padding: 5% 0% 5% 0%;
-  margin: 0 auto;
+  margin: 10% auto;
 
   .book__subtitle {
     font-size: 23px;
@@ -382,7 +391,7 @@ header {
 
     .about__image {
       img {
-        width: 90%;
+        width: 100%;
       }
     }
 
@@ -425,10 +434,56 @@ header {
   }
 }
 
+.photo__new {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  margin: 0 auto;
+  grid-column-gap: 30px;
+
+  .photo__new__item {
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  @media screen and (max-width: 992px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  @media screen and (max-width: 576px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+}
+
 .kitchen {
   margin: 10% auto;
   font-weight: 900;
   text-align: center;
+
+  img {
+    width: 80%;
+  }
 
   .kitchen__text {
 
@@ -451,10 +506,13 @@ header {
     grid-column-gap: 40px;
     margin: 96px auto;
 
+    &.first {
+      grid-template-rows: 80% 80%;
+    }
+
     @media screen and (max-width: 992px) {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(2, 1fr);
       grid-template-rows: 50% 50%;
       margin-bottom: 50%;
     }
@@ -471,6 +529,12 @@ header {
       @media screen and (max-width: 992px) {
         width: 90%;
         margin: 0 auto;
+      }
+
+      .section__title__first {
+        margin-top: 24px;
+        color: #DCCA87;
+        font-size: 23px;
       }
 
 
@@ -603,6 +667,55 @@ header {
   }
 }
 
+.reviews {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 250px;
+
+  .reviews__title {
+    font-size: 23px;
+    font-weight: 900;
+    color: white;
+    margin-top: 40px;
+  }
+
+  .reviews__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 32px;
+    border: 1px solid #BBA770;
+    border-radius: 5px;
+
+    .reviews__up {
+      font-size: 18px;
+      font-weight: 600;
+      color: #FFF;
+      padding: 20px 30px;
+      border-bottom: 1px solid #BBA770;
+    }
+
+    .reviews__bottom {
+      font-size: 18px;
+      font-weight: 600;
+      color: #FFF;
+      padding: 20px 30px;
+      
+
+      p {
+        margin-bottom: 12px;
+      }
+      
+      a {
+        font-weight: 900;
+        color: #DCCA87;
+        margin-top: 25px;
+        text-decoration: none;
+        
+      }
+    }
+  }
+}
+
 .news {
   margin: 10% auto;
 
@@ -706,6 +819,7 @@ header {
     @media screen and (max-width: 1200px) {
       grid-area: 1;
     }
+
     img {
       @media screen and (max-width: 768px) {
         width: 100%;
@@ -727,6 +841,7 @@ header {
       a {
         padding: 10px;
         color: #FFF;
+
         i {
           font-size: 25px;
         }
